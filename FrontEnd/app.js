@@ -45,8 +45,8 @@ function addCustomer() {
 
     const raw = JSON.stringify({
         "name": name,
-        "address":address,
-        "salary":salary
+        "address": address,
+        "salary": salary
     });
 
     const requestOptions = {
@@ -60,4 +60,4 @@ function addCustomer() {
         .then((response) => response.text())
         .then((result) => console.log(result))
         .catch((error) => console.error(error));
-} 
+}
